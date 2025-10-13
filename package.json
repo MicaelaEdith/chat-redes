@@ -1,0 +1,18 @@
+{
+  "name": "chat-redes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "node ./src/server/server.js",
+    "client": "node ./src/server/client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.3"
+  }
+}
