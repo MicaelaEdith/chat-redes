@@ -20,7 +20,13 @@
 
         <input class="div" style="width: 650px;" id="msg" placeholder="Mensaje...">
         <button class="btn" onclick="enviar()">Enviar</button>
+        <input id="nuevoNick" class="div" style="width: 100px;" placeholder="Nuevo nick"> 
+        <button class="btn" onclick="cambiarNick()">Cambiar nick</button>
+        <button class="btn" style="display:block; margin-left: 5px;"onclick="pedirUsuarios()">Usuarios conectados</button>
+        <div class="lista" id="listaUsuarios"></div>
+
     </div>
+
 
     <script src="crypto.js"></script>
     <script src="app.js"></script>
@@ -40,14 +46,14 @@ h1 {
     border: solid 2px #478ce8;
     border-radius: 3px;
     width: 100px;
-    height: 25px;
+    height: 34px;
 }
 
 .btn {
     border: none;
     border-radius: 3px;
     width: 100px;
-    height: 29px;
+    height: 38px;
     background-color: #478ce8;
     color: aliceblue;
     font-weight: 600;
@@ -62,5 +68,12 @@ h1 {
     font-family: sans-serif;
     color: rgb(82, 82, 82);
     padding: 5px;
+}
+
+.lista{
+    font-family: sans-serif;
+    color: #478ce8;
+    margin: 5px;
+    margin-top: 10px;
 }
 </style>
